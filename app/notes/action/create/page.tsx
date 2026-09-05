@@ -7,11 +7,11 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Create New Note | NoteHub",
   description:
-    "Quickly create a new note in Notehub - the efficient app for orginizing your thoughts and ideas.",
+    "Quickly create a new note in Notehub - the efficient app for organizing your thoughts and ideas.",
   openGraph: {
     title: "Create New Note | NoteHub",
     description:
-      "Quickly create a new note in Notehub - the efficient app for orginizing your thoughts and ideas.",
+      "Quickly create a new note in Notehub - the efficient app for organizing your thoughts and ideas.",
     url: "https://notehub.com/notes/action/create",
     siteName: "NoteHub",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Create New Note | NoteHub",
     description:
-      "Quickly create a new note in Notehub - the efficient app for orginizing your thoughts and ideas.",
+      "Quickly create a new note in Notehub - the efficient app for organizing your thoughts and ideas.",
     images: ["https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"],
   },
 };

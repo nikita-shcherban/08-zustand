@@ -44,7 +44,7 @@ export const NoteForm = () => {
         <label htmlFor="title">Title</label>
         <input
           id="title"
-          defaultValue={draft?.title}
+          value={draft?.title}
           onChange={handleChange}
           type="text"
           name="title"
@@ -56,7 +56,7 @@ export const NoteForm = () => {
         <label htmlFor="content">Content</label>
         <textarea
           id="content"
-          defaultValue={draft?.content}
+          value={draft?.content}
           onChange={handleChange}
           name="content"
           rows={8}
@@ -68,7 +68,7 @@ export const NoteForm = () => {
         <label htmlFor="tag">Tag</label>
         <select
           id="tag"
-          defaultValue={draft?.tag}
+          value={draft?.tag}
           onChange={handleChange}
           name="tag"
           className={css.select}
