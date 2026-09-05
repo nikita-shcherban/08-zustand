@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  modal?: React.ReactNode;
+  modal: React.ReactNode;
 }
 
 export default function RootLayout({ children, modal }: RootLayoutProps) {
@@ -54,7 +54,7 @@ export default function RootLayout({ children, modal }: RootLayoutProps) {
           <Header />
           <main>
             {children}
-            {modal ?? null}
+            {modal}
           </main>
           <Footer />
         </TanStackProvider>
