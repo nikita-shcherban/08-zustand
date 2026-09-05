@@ -2,7 +2,7 @@ import { NewNoteData } from "@/lib/api";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-type NoteDraftStore = {
+type NoteStore = {
   draft: NewNoteData;
   setDraft: (note: NewNoteData) => void;
   clearDraft: () => void;
@@ -14,7 +14,7 @@ const initialDraft: NewNoteData = {
   tag: "Todo",
 };
 
-export const useDraftStore = create<NoteDraftStore>()(
+export const useNoteStore = create<NoteStore>()(
   persist(
     (set) => ({
       draft: initialDraft,

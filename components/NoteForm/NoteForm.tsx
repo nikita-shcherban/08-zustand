@@ -4,13 +4,13 @@ import React from "react";
 import css from "./NoteForm.module.css";
 import { useRouter } from "next/navigation";
 import { createNote, NewNoteData } from "@/lib/api";
-import { useDraftStore } from "@/lib/store/draftStore";
+import { useNoteStore } from "@/lib/store/noteStore";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 export const NoteForm = () => {
   const router = useRouter();
   const queryClient = useQueryClient();
-  const { draft, setDraft, clearDraft } = useDraftStore();
+  const { draft, setDraft, clearDraft } = useNoteStore();
 
   const handleCancel = () => router.push("/notes/filter/all");
 
