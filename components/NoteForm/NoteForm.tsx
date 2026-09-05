@@ -4,7 +4,7 @@ import React from "react";
 import css from "./NoteForm.module.css";
 import { useRouter } from "next/navigation";
 import { createNote, NewNoteData } from "@/lib/api";
-import { useDraftStore } from "@/store/draftStore";
+import { useDraftStore } from "@/lib/store/draftStore";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 export const NoteForm = () => {
